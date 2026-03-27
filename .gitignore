@@ -1,0 +1,59 @@
+# Maven
+target/
+release.properties
+allure-results/
+allure-report/
+TesteSicred.iml
+
+# Eclipse, IntelliJ IDEA, VS Code
+.idea/
+*.iml
+*.ipr
+*.iws
+*.class
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.vscode/
+
+# Diretórios de build
+out/
+build/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configurações de testes
+test-output/
+surefire-reports/
+
+# Arquivos de relatórios
+*.html
+
+# Arquivos gerados pelo sistema
+*.log
+*.cache
+*.gz
+*.zip
+
+# Arquivos de credenciais (por segurança, se for usado futuramente)
+application-local.properties
+application-dev.properties
+
+# Coverage
+jacoco.exec
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.old
+
+# Payloads gerados automaticamente (se aplicável)
+generated-payloads/
+
+# Sistema operacional
+*.DS_Store
+*.idea

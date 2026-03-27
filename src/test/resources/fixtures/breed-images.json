@@ -1,0 +1,19 @@
+{
+  "racas_validas": [
+    "husky",
+    "labrador",
+    "poodle"
+  ],
+  "racas_invalidas": [
+    "raca_inexistente",
+    "invalid_breed",
+    "teste123"
+  ],
+  "metodos_nao_permitidos": [
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "timeout_esperado_ms": 3000,
+  "quantidade_minima_imagens": 1
+} 

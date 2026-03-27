@@ -1,0 +1,42 @@
+name: CI Pipeline - Testes Funcionais
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    name: Executar Testes Funcionais
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v4
+      
+    - name: Configurar Java 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: 'maven'
+        
+    - name: Validar projeto Maven
+      run: mvn validate
+      
+    - name: Compilar projeto
+      run: mvn compile
+      
+    - name: Executar testes
+      run: mvn test
+      
+    - name: Gerar relatório Allure
+      run: mvn allure:report
+      
+    - name: Upload relatório Allure como artifact
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: allure-report
+        path: target/allure-report/

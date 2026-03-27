@@ -1,0 +1,25 @@
+{
+  "racas_esperadas": [
+    "husky",
+    "labrador", 
+    "golden",
+    "bulldog",
+    "poodle",
+    "retriever",
+    "german shepherd",
+    "beagle",
+    "rottweiler",
+    "boxer"
+  ],
+  "racas_populares": [
+    "labrador",
+    "golden",
+    "bulldog",
+    "poodle"
+  ],
+  "racas_invalidas": [
+    "raca_inexistente",
+    "invalid_breed",
+    "teste123"
+  ]
+} 
