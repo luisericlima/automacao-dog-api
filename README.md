@@ -1,4 +1,4 @@
-# Teste técnico DOG API
+# Teste aplicação DOG API
 
 ![Allure Report](allure-result.png)
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://openjdk.java.net/)
